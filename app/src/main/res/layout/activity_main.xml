@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
+    tools:context=".activity.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/white"
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content_frame"
+            >
+
+            <!--<Button-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_width="65dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:text="Turn On"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:background="@drawable/button_background_red_dark_border"-->
+                <!--android:onClick="onTurnOnButtonClicked"-->
+                <!--android:layout_gravity="top|right"-->
+                <!--/>-->
+
+            <!--<Button-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginRight="75dp"-->
+                <!--android:layout_width="65dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:text="Turn Off"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:background="@drawable/button_background_blue_dark_border"-->
+                <!--android:onClick="onTurnOffButtonClicked"-->
+                <!--android:layout_gravity="top|right"-->
+                <!--/>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/images_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                />
+
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>
