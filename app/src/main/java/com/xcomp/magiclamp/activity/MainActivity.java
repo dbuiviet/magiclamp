@@ -56,6 +56,8 @@ public class MainActivity extends BaseActivity {
 
     static private String TAG = MainActivity.class.getSimpleName();
 
+    public String mqttTopic = "/topic/qos0";
+
     MqttHelper mqttHelper;
 
     GridViewAdapter_Images gridViewAdapter;
@@ -426,7 +428,8 @@ public class MainActivity extends BaseActivity {
             message.setId(5866);
             message.setRetained(true);
             message.setQos(0);
-            mqttHelper.mqttAndroidClient.publish("lampcontrol",message);
+            //mqttHelper.mqttAndroidClient.publish(mqttTopic,message);
+            mqttHelper.mqttAndroidClient.publish("/topic/qos0", message);
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -443,7 +446,8 @@ public class MainActivity extends BaseActivity {
             message.setId(5866);
             message.setRetained(true);
             message.setQos(0);
-            mqttHelper.mqttAndroidClient.publish("lampcontrol",message);
+            //mqttHelper.mqttAndroidClient.publish(mqttTopic,message);
+            mqttHelper.mqttAndroidClient.publish("/topic/qos0", message);
         }
         catch (Exception e) {
             e.printStackTrace();

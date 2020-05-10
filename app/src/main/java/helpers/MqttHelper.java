@@ -19,14 +19,14 @@ import java.io.UnsupportedEncodingException;
 public class MqttHelper {
     public MqttAndroidClient mqttAndroidClient;
 
-    final String serverUri = "tcp://27.71.225.91:1883";
+    final String serverUri = "tcp://27.71.228.66:1883";
 
-    final String clientId = "ExampleAndroidClient";
+    final String clientId = "Esp32Cam";
 
     String subscriptionTopic = "hientest";
 
-    final String username = "rycxphmh";
-    final String password = "QZY_5SEZF2Bt";
+    final String username = ""; //"rycxphmh";
+    final String password = ""; //"QZY_5SEZF2Bt";
 
     public MqttHelper(Context context, String subscriptionTopic, MqttCallbackExtended callbackExtended){
         this.subscriptionTopic = subscriptionTopic;
@@ -65,8 +65,8 @@ public class MqttHelper {
         MqttConnectOptions mqttConnectOptions = new MqttConnectOptions();
         mqttConnectOptions.setAutomaticReconnect(true);
         mqttConnectOptions.setCleanSession(false);
-        mqttConnectOptions.setUserName(username);
-        mqttConnectOptions.setPassword(password.toCharArray());
+        //mqttConnectOptions.setUserName(username);
+        //mqttConnectOptions.setPassword(password.toCharArray());
 
         try {
 

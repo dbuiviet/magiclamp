@@ -6,9 +6,8 @@ package com.xcomp.magiclamp.WebserviceGeneralManage;
 
 public class WebserviceInfors {
 
-    public static final String base_host_service = "http://27.71.225.91:3000/";
 //    public static final String base_host_service = "http://172.20.10.3:3000/";
-//    public static final String base_host_service = "http://192.168.43.47:3000/";
+    public static final String base_host_service = "http://192.168.43.47:3000/";
     public static final String get_all_session = "lamp/getallsession";
 
     public static final String get_all_image_model = "image/getallimagemodel";
