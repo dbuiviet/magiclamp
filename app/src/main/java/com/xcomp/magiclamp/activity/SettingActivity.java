@@ -30,7 +30,7 @@ public class SettingActivity extends BaseActivity {
         tfSsid = (EditText) findViewById(R.id.tfWifiName);
         tfPassword = (EditText) findViewById(R.id.tfPassword);
 
-        webview = (WebView) findViewById(R.id.webview);
+        //webview = (WebView) findViewById(R.id.webview);
         ImageView imgBackground = (ImageView) findViewById(R.id.img_background);
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
@@ -59,7 +59,7 @@ public class SettingActivity extends BaseActivity {
 
         String ssid = tfSsid.getText().toString().trim();
         String password = tfPassword.getText().toString().trim();
-        webview.loadUrl("http://192.168.1.100/?ssid=" + ssid + "&pass=" + password);
+        //webview.loadUrl("http://192.168.1.100/?ssid=" + ssid + "&pass=" + password);
 
 //        String msg = "a test message";
 //        byte[] encodedPayload = new byte[0];

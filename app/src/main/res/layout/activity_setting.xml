@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".activity.SettingActivity"
     android:orientation="vertical">
-    <WebView
-        android:id="@+id/webview"
-        android:layout_width="0dp"
-        android:layout_height="0dp"></WebView>
+<!--    <WebView-->
+<!--        android:id="@+id/webview"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"></WebView>-->
     <ImageView
         android:id="@+id/img_background"
         android:paddingTop="0dp"
